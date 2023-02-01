@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: sans-serif;
+  background-color: rgb(204, 238, 247);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 85%;
+  margin: 0 auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-heading{
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.search-input{
+  margin-bottom: 30px;
+  padding: 10px;
+  width: 80%;
+  font-size: 16px
+}
+.search-input:focus{
+  outline: 0;
+}
+.cards-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.user-card{
+  width: 350px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 10px;
+  color: gray;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.info-group{
+  display: flex;
+  gap: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info-data{
+  color: rgb(83, 83, 83);
+  font-weight: bold;
 }
